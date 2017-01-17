@@ -6,3 +6,6 @@ FFLAGS= -O -I/opt/software/libraries/netcdf/bullxmpi/netcdf-4.3.3-rc2/include   
 squeeze_dim: squeeze_dim.f90
 	$(FC) $(FFLAGS) squeeze_dim.f90 -o squeeze_dim -lnetcdf
 
+dir_geo: dir_geo.f90
+	$(FC) $(FFLAGS) dir_geo.f90 -o dir_geo -lnetcdf
+
